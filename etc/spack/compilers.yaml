@@ -1,0 +1,27 @@
+compilers:
+- compiler:
+    environment: {}
+    extra_rpaths: []
+    flags: {}
+    modules: [intel-fc-18/18.1.163, intel-cc-18/18.1.163, gcc/7.3.0]
+    operating_system: rhel7
+    paths:
+      cc: /tessfs1/sw/Intel/compilers_and_libraries_2018.1.163/linux/bin/intel64/icc
+      cxx: /tessfs1/sw/Intel/compilers_and_libraries_2018.1.163/linux/bin/intel64/icpc
+      f77: /tessfs1/sw/Intel/compilers_and_libraries_2018.1.163/linux/bin/intel64/ifort
+      fc: /tessfs1/sw/Intel/compilers_and_libraries_2018.1.163/linux/bin/intel64/ifort
+    spec: intel@18.0.1
+    target: x86_64
+- compiler:
+    environment: {}
+    extra_rpaths: []
+    flags: {}
+    modules: [gcc/7.3.0]
+    operating_system: rhel7
+    paths:
+      cc: /tessfs1/home/y07/y07/rse/gcc/7.3.0/bin/gcc
+      cxx: /tessfs1/home/y07/y07/rse/gcc/7.3.0/bin/g++
+      f77: /tessfs1/home/y07/y07/rse/gcc/7.3.0/bin/gfortran
+      fc: /tessfs1/home/y07/y07/rse/gcc/7.3.0/bin/gfortran
+    spec: gcc@7.3.0
+    target: x86_64

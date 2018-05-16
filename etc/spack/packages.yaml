@@ -1,0 +1,19 @@
+packages:
+  intel-mpi:
+    paths:
+      intel-mpi@2018.1.163: /tessfs1/sw/Intel/parallel_studio_xe_2018.1.038
+    buildable: False 
+  intel-mkl:
+    paths:
+      intel-mkl@2018.1.163: /tessfs1/sw/Intel/parallel_studio_xe_2018.1.038/compilers_and_libraries_2018/linux/mkl
+    buildable: False 
+  openssl:
+    paths:
+      openssl@1.0.2k: /usr
+    buildable: False
+  all:
+    compiler: [gcc, intel]
+    providers: 
+     mpi: [intel-mpi]
+     blas: [mkl]
+     lapack: [mkl]
